@@ -66,7 +66,7 @@
   .hero .divider{width:64px; height:1px; background:rgba(255,255,255,.55); margin:26px auto;}
   .hero .place{letter-spacing:.34em; text-transform:uppercase; font-size:13px; color:var(--soft);}
   .scroll-cue{margin-top:48px; font-size:12px; letter-spacing:.24em; text-transform:uppercase; color:var(--soft);}
-  .scroll-cue::after{content:"❧"; display:block; font-size:20px; margin-top:6px; animation:bob 2.4s ease-in-out infinite;}
+  
   @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 
   main{padding:40px 0 30px;}
@@ -93,7 +93,7 @@
   @media (prefers-reduced-motion: reduce){
     .intro,.skip{display:none;} .page{opacity:1; animation:none;}}
 
-  .roundel{--r:66px; width:var(--r); height:var(--r); margin:30px auto 0; position:relative; filter:drop-shadow(0 2px 14px rgba(0,0,0,.4));}
+  .roundel{--r:66px; width:var(--r); height:var(--r); margin:24px auto 0; position:relative; filter:drop-shadow(0 2px 14px rgba(0,0,0,.4)); animation:bob 2.4s ease-in-out infinite;}
   .roundel .rd-ring{position:absolute; inset:0; border-radius:50%; border:11px solid #fff;}
   .roundel .rd-bar{position:absolute; left:-12%; right:-12%; top:50%; transform:translateY(-50%); height:13px; background:#fff;}
   .note{min-height:46vh; display:flex; align-items:center; justify-content:center; text-align:center; font-style:italic; font-size:clamp(20px,3.4vw,28px); color:var(--soft);}
